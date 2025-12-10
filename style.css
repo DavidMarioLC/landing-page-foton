@@ -145,7 +145,7 @@ body {
 }
 
 .section-details__content {
-  text-align: center;
+  text-align: justify;
   max-width: 840px;
   margin: 0 auto;
 }
@@ -166,6 +166,9 @@ body {
 }
 
 @media (min-width: 768px) {
+  .section-details__content {
+    text-align: center;
+  }
   .section-details {
     padding-block: 48px;
   }
