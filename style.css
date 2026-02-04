@@ -362,6 +362,7 @@ body {
 .model-card__details {
   color: white;
   font-size: 0.875rem;
+  margin-bottom: 8px;
 }
 
 /* gallery */
@@ -640,8 +641,19 @@ body {
 \**************************/
 
 .modal {
-  font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir,
-    helvetica neue, helvetica, ubuntu, roboto, noto, segoe ui, arial, sans-serif;
+  font-family:
+    -apple-system,
+    BlinkMacSystemFont,
+    avenir next,
+    avenir,
+    helvetica neue,
+    helvetica,
+    ubuntu,
+    roboto,
+    noto,
+    segoe ui,
+    arial,
+    sans-serif;
 }
 
 .modal__overlay {
@@ -728,7 +740,9 @@ body {
   transform: translateZ(0);
   transition: -webkit-transform 0.25s ease-out;
   transition: transform 0.25s ease-out;
-  transition: transform 0.25s ease-out, -webkit-transform 0.25s ease-out;
+  transition:
+    transform 0.25s ease-out,
+    -webkit-transform 0.25s ease-out;
 }
 
 .modal__btn:focus,
@@ -814,4 +828,22 @@ body {
   .modal__close {
     padding: 0;
   }
+}
+
+/*download-button */
+.download-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 20px;
+  background-color: #071d5a;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.download-button:hover {
+  background-color: #03123e;
 }
