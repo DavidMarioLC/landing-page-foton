@@ -1,4 +1,5 @@
 /**-------- MODAL ------- */
+// https://micromodal.vercel.app/
 
 MicroModal.init({
   disableScroll: true,
@@ -7,13 +8,14 @@ MicroModal.init({
 });
 
 /**-------- ANIMATIONS ------- */
+// https://motion.dev/
 
 const { animate, scroll, stagger, inView } = Motion;
 
 animate(
   ".hero__title",
   { y: [50, 0], opacity: [0, 1] },
-  { duration: 1, delay: 0.3 }
+  { duration: 1, delay: 0.3 },
 );
 
 animate(
@@ -24,27 +26,27 @@ animate(
   },
   {
     duration: 0.5,
-    delay: stagger(0.5, { start: 0.1 }), // Stagger de 0.8s empezando a los 0.1s
+    delay: stagger(0.5, { start: 0.1 }),
     easing: "spring(1, 80, 10, 0)",
-  }
+  },
 );
 
 animate(
   ".section-details__header h2",
   { y: [30, 0], opacity: [0, 1] },
-  { duration: 0.8, delay: 1.0, easing: "ease-out" }
+  { duration: 0.8, delay: 1.0, easing: "ease-out" },
 );
 
 animate(
   ".section-details__header strong",
   { y: [20, 0], opacity: [0, 1] },
-  { duration: 0.8, delay: 1.3, easing: "ease-out" }
+  { duration: 0.8, delay: 1.3, easing: "ease-out" },
 );
 
 animate(
   ".section-details__content p",
   { y: [20, 0], opacity: [0, 1] },
-  { duration: 0.8, delay: 1.6, easing: "ease-out" }
+  { duration: 0.8, delay: 1.6, easing: "ease-out" },
 );
 
 animate(
@@ -54,9 +56,9 @@ animate(
   },
   {
     duration: 0.6,
-    delay: 2.0, // Después del párrafo
+    delay: 2.0,
     easing: "ease-out",
-  }
+  },
 );
 
 animate(
@@ -68,9 +70,9 @@ animate(
   },
   {
     duration: 0.6,
-    delay: stagger(0.15, { start: 3 }), // Después de .characteristics
+    delay: stagger(0.15, { start: 3 }),
     easing: "ease-out",
-  }
+  },
 );
 
 const modelsTitle = document.querySelector(".section-models__title");
@@ -87,10 +89,10 @@ inView(
       {
         duration: 0.8,
         easing: "spring(1, 80, 10, 0)",
-      }
+      },
     );
   },
-  { amount: 0.3 }
+  { amount: 0.3 },
 );
 
 const modelGallery = document.querySelector(".gallery");
@@ -103,17 +105,15 @@ inView(
       {
         opacity: [0, 1],
         scale: [0.8, 1],
-        // translateY: [50, 0],
-        // scale: [0.8, 1],
       },
       {
         duration: 0.5,
         delay: stagger(0.1),
         easing: "spring(1, 80, 10, 0)",
-      }
+      },
     );
   },
-  { once: true }
+  { once: true },
 );
 
 const aboutSection = document.querySelector(".section-about");
@@ -127,7 +127,7 @@ inView(aboutSection, () => {
     {
       duration: 1,
       easing: "ease-out",
-    }
+    },
   );
 });
 
@@ -146,10 +146,10 @@ inView(
         duration: 0.6,
         delay: stagger(0.2),
         easing: "ease-out",
-      }
+      },
     );
   },
-  { once: true }
+  { once: true },
 );
 
 const sectionFormTitle = document.querySelector(".section-form__header h2");
@@ -163,7 +163,7 @@ inView(sectionFormTitle, () => {
     {
       duration: 0.8,
       easing: "spring(1, 80, 10, 0)",
-    }
+    },
   );
 });
 
@@ -179,7 +179,7 @@ inView(sectionFormParagraph, () => {
       duration: 0.8,
       delay: 0.2,
       easing: "ease-out",
-    }
+    },
   );
 });
 
@@ -195,7 +195,7 @@ inView(sectionForm, () => {
       duration: 1,
       delay: 0.4,
       easing: "ease-out",
-    }
+    },
   );
 });
 
