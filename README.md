@@ -7,5 +7,3 @@
 - Canal de contacto
 
 ## Enlaces a redes sociales
-
-# Imágenes de los modelos y del detalle del modelo
